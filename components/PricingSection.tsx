@@ -76,7 +76,7 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
                 </div>
 
                 <a 
-                  href="https://pay.hotmart.com/S98957382H?off=ghf5xpef&src=lp_ads_chatadate_global" 
+                  href="https://pay.hotmart.com/S98957382H?off=ghf5xpef" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-bold text-lg transition-all transform hover:scale-[1.02] shadow-[0_4px_20px_-5px_rgba(37,99,235,0.4)] active:scale-95"
