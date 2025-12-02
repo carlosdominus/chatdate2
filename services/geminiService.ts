@@ -1,9 +1,10 @@
-import { GoogleGenAI, SchemaType, Type } from "@google/genai";
+import { GoogleGenAI, Type } from "@google/genai";
 import { GeneratedReply } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export const analyzeStoryImage = async (base64Image: string): Promise<GeneratedReply[]> => {
+  // Initialize client inside the function to ensure process.env is ready and avoid top-level crashes
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
   try {
     const modelId = "gemini-2.5-flash"; // Using flash for fast multimodal analysis
     
