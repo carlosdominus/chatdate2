@@ -1,0 +1,5 @@
+{
+  "name": "ChatDate - AI Dating Assistant",
+  "description": "A React implementation of the ChatDate landing page with functional AI analysis for Instagram story replies using Google Gemini.",
+  "requestFramePermissions": []
+}
