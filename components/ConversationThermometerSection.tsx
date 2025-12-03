@@ -23,19 +23,19 @@ export const ConversationThermometerSection: React.FC<ConversationThermometerSec
              {/* Badge */}
              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#78BBFF] shadow-[0_0_0_1px_rgba(120,187,255,0.2)] bg-transparent">
                 <Gauge className="w-5 h-5 text-[#78BBFF]" />
-                <span className="text-sm font-bold text-[#78BBFF] tracking-wide">Termômetro da Conversa</span>
+                <span className="text-sm font-bold text-[#78BBFF] tracking-wide">Conversation Thermometer</span>
              </div>
 
              {/* Heading */}
              <div className="space-y-2">
                <h2 className="text-3xl md:text-4xl font-bold leading-[1.1] tracking-tight">
                   <span className="bg-gradient-to-br from-[#EEE] to-[#94B4FF] bg-clip-text text-transparent block">
-                      Ela está interessada ou só está sendo simpática?
+                      Is she interested or just being nice?
                   </span>
                </h2>
                <h2 className="text-3xl md:text-4xl font-bold leading-[1.1] tracking-tight">
                   <span className="bg-gradient-to-br from-[#EEE] to-[#94B4FF] bg-clip-text text-transparent block">
-                       Nunca mais fique na dúvida…
+                       Never be in doubt again...
                   </span>
                </h2>
              </div>
@@ -43,10 +43,10 @@ export const ConversationThermometerSection: React.FC<ConversationThermometerSec
              {/* Description */}
              <div className="space-y-1">
                <p className="text-base text-[#B0B5BE] font-medium leading-relaxed max-w-lg mx-auto">
-                  O ChatDate tem um termômetro em tempo real da conversa.
+                  ChatDate features a real-time conversation thermometer.
                </p>
                <p className="text-base text-[#B0B5BE] font-medium leading-relaxed max-w-lg mx-auto">
-                  Te dizendo se é hora de esquentar a conversa ou dar uma diminuída na intensidade
+                  Telling you if it's time to heat things up or tone it down.
                </p>
              </div>
 
@@ -55,7 +55,7 @@ export const ConversationThermometerSection: React.FC<ConversationThermometerSec
                 onClick={onCtaClick}
                 className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full text-white font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.4)] active:scale-95 mt-4"
               >
-                Quero Usar Agora
+                Try It Now
               </button>
           </div>
 

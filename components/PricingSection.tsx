@@ -8,14 +8,14 @@ interface PricingSectionProps {
 
 export const PricingSection: React.FC<PricingSectionProps> = () => {
   const features = [
-    "Acesso a todas as funcionalidades",
-    "Curso Dominando o ChatDate",
-    "Método Vilaverde Online",
-    "Template do Tinder Sedutor",
-    "Checklist do Instagram Irresistivel",
-    "Hotseats Mensais",
+    "Access to all features",
+    "Mastering ChatDate Course",
+    "Vilaverde Method Online",
+    "Seductive Tinder Template",
+    "Irresistible Instagram Checklist",
+    "Monthly Hotseats",
     "The Social Circle",
-    "Suporte Exclusivo"
+    "Exclusive Support"
   ];
 
   return (
@@ -32,7 +32,7 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
           <h3 className="text-lg font-bold text-gray-200 uppercase tracking-wider">ChatDate</h3>
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.1]">
             <span className="bg-gradient-to-r from-white via-blue-100 to-blue-300 bg-clip-text text-transparent">
-              Escolha Seu Plano:
+              Choose Your Plan:
             </span>
           </h2>
         </div>
@@ -51,8 +51,8 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B14] to-transparent"></div>
               <div className="absolute bottom-4 left-0 w-full text-center">
                 <h3 className="text-xl font-bold text-white mb-1">ChatDate Global</h3>
-                <p className="text-sm font-semibold text-white/70">Funciona em todos idiomas</p>
-                <p className="text-sm font-semibold text-white/70">Ideal se você mora fora ou vai viajar</p>
+                <p className="text-sm font-semibold text-white/70">Works in all languages</p>
+                <p className="text-sm font-semibold text-white/70">Ideal if you live abroad or travel</p>
               </div>
             </div>
 
@@ -69,11 +69,11 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
               </div>
 
               <div className="border-t border-white/10 pt-6 text-center">
-                <p className="text-red-400 font-bold text-sm mb-1 line-through">DE $ 177 POR</p>
+                <p className="text-red-400 font-bold text-sm mb-1 line-through">FROM $ 177 TO</p>
                 <div className="flex items-end justify-center gap-1 mb-6 text-white">
                   <span className="text-2xl font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">$</span>
                   <span className="text-5xl font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">87</span>
-                  <span className="text-lg font-medium text-gray-400 mb-1">/ano</span>
+                  <span className="text-lg font-medium text-gray-400 mb-1">/year</span>
                 </div>
 
                 <a 
@@ -82,15 +82,15 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
                   rel="noopener noreferrer"
                   className="block w-full py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-bold text-lg transition-all transform hover:scale-[1.02] shadow-[0_4px_20px_-5px_rgba(37,99,235,0.4)] active:scale-95"
                 >
-                  Assinar Agora
+                  Subscribe Now
                 </a>
                 
                 <div className="mt-4 flex flex-col items-center gap-1 opacity-60">
                    <div className="flex items-center gap-2">
                       <ShieldCheck size={14} className="text-blue-300" />
-                      <span className="text-xs text-blue-200 font-medium">15 Dias de Garantia</span>
+                      <span className="text-xs text-blue-200 font-medium">15-Day Guarantee</span>
                    </div>
-                   <span className="text-[10px] text-blue-200/70">Compra Segura • Atualizações semanais</span>
+                   <span className="text-[10px] text-blue-200/70">Secure Purchase • Weekly Updates</span>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
                     />
                     <text fill="white" fontSize="6.2" fontWeight="700" letterSpacing="1.2">
                       <textPath href="#textPath" startOffset="0%">
-                        GARANTIA INCONDICIONAL 15 DIAS • GARANTIA INCONDICIONAL 15 DIAS •
+                        15 DAY UNCONDITIONAL GUARANTEE • 15 DAY UNCONDITIONAL GUARANTEE •
                       </textPath>
                     </text>
                   </svg>
@@ -131,18 +131,18 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
             {/* Pill Label */}
             <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full border border-blue-500/30 bg-blue-900/10 backdrop-blur-md mb-6 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
                <Flame size={16} className="text-blue-400 fill-blue-400" />
-               <span className="text-sm font-semibold text-blue-100">Risco Zero</span>
+               <span className="text-sm font-semibold text-blue-100">Zero Risk</span>
             </div>
 
             {/* Title */}
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
-               Garantia de 15 dias
+               15-Day Guarantee
             </h3>
 
             {/* Description */}
             <p className="text-base text-slate-400 font-medium leading-relaxed max-w-xl mx-auto">
-               <strong className="text-white block md:inline">Teste o ChatDate por 15 dias sem compromisso,</strong>{" "}
-               se você não gostar nós vamos te reembolsar 100% do valor investido
+               <strong className="text-white block md:inline">Try ChatDate for 15 days risk-free,</strong>{" "}
+               if you don't like it we'll refund 100% of your investment
             </p>
 
         </div>

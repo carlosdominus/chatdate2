@@ -38,33 +38,33 @@ const icons = {
 
 const features = [
   {
-    title: "Modo Conversa",
-    description: "Gere a mensagem perfeita personalizada para a mulher que você está falando",
+    title: "Conversation Mode",
+    description: "Generate the perfect personalized message for the woman you're talking to",
     icon: icons.conversation
   },
   {
-    title: "Gerador de Bio",
-    description: "Não passe vergonha com uma bio genérica, se destaque com uma bio chamativa",
+    title: "Bio Generator",
+    description: "Don't settle for a generic bio, stand out with a catchy one",
     icon: icons.bio
   },
   {
-    title: "Análise de perfil",
-    description: "Descubra como está o seu perfil e saiba como melhorar ele",
+    title: "Profile Analysis",
+    description: "Find out how your profile looks and learn how to improve it",
     icon: icons.profile
   },
   {
-    title: "Termômetro da Conversa",
-    description: "Descubra se ela realmente está interessada ou está só sendo simpática",
+    title: "Conversation Thermometer",
+    description: "Find out if she's really interested or just being polite",
     icon: icons.thermometer
   },
   {
-    title: "Modo Close",
-    description: "Marque o encontro ou rejeite ela com delicadeza",
+    title: "Closing Mode",
+    description: "Set up the date or reject her gently",
     icon: icons.smile
   },
   {
-    title: "Modo Abordagem",
-    description: "Nunca fique sem saber o que falar para uma mulher durante o dia",
+    title: "Approach Mode",
+    description: "Never run out of things to say to a woman during the day",
     icon: icons.smile
   }
 ];
@@ -86,15 +86,15 @@ export const FeaturesGridSection: React.FC = () => {
             <div className="w-5 h-5 text-[#395BC7]">
               {icons.header}
             </div>
-            <span className="text-sm font-bold text-[#395BC7] tracking-wide">Ferramentas</span>
+            <span className="text-sm font-bold text-[#395BC7] tracking-wide">Tools</span>
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#323140] tracking-tight leading-[1.1]">
-            Todos os Modos do ChatDate
+            All ChatDate Modes
           </h2>
           
           <p className="text-base text-slate-500 font-medium">
-            Explore todos os modos do ChatDate
+            Explore all ChatDate features
           </p>
         </div>
 

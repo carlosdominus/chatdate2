@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GeneratedReply } from '../types';
 import { X, Copy, Check, Loader2 } from 'lucide-react';
@@ -34,7 +35,7 @@ export const AnalysisModal: React.FC<AnalysisModalProps> = ({
         {/* Header */}
         <div className="p-6 border-b border-white/10 flex justify-between items-center bg-[#151515]">
           <h3 className="text-xl font-bold bg-gradient-to-r from-blue-200 to-blue-500 bg-clip-text text-transparent">
-            {isLoading ? 'Analisando Story...' : 'Opções de Resposta'}
+            {isLoading ? 'Analyzing Story...' : 'Reply Options'}
           </h3>
           <button onClick={onClose} className="text-gray-400 hover:text-white transition">
             <X size={24} />
@@ -79,7 +80,7 @@ export const AnalysisModal: React.FC<AnalysisModalProps> = ({
               ) : results ? (
                 <div className="space-y-4">
                   <p className="text-gray-400 text-sm mb-4">
-                    Aqui estão 3 opções criadas pela IA baseadas na imagem:
+                    Here are 3 AI-generated options based on the image:
                   </p>
                   {results.map((reply) => (
                     <div 
@@ -91,12 +92,12 @@ export const AnalysisModal: React.FC<AnalysisModalProps> = ({
                           ${reply.tone === 'flirty' ? 'bg-pink-500/20 text-pink-300' : 
                             reply.tone === 'funny' ? 'bg-yellow-500/20 text-yellow-300' : 
                             'bg-blue-500/20 text-blue-300'}`}>
-                          {reply.tone === 'flirty' ? 'Xaveco' : reply.tone === 'funny' ? 'Engraçado' : 'Casual'}
+                          {reply.tone === 'flirty' ? 'Flirty' : reply.tone === 'funny' ? 'Funny' : 'Casual'}
                         </span>
                         <button 
                           onClick={() => handleCopy(reply.text, reply.id)}
                           className="text-gray-400 hover:text-white transition p-1"
-                          title="Copiar"
+                          title="Copy"
                         >
                           {copiedId === reply.id ? <Check size={16} className="text-green-400" /> : <Copy size={16} />}
                         </button>
@@ -110,12 +111,12 @@ export const AnalysisModal: React.FC<AnalysisModalProps> = ({
                     onClick={onClose}
                     className="w-full mt-4 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white font-medium transition"
                   >
-                    Tentar outra foto
+                    Try another photo
                   </button>
                 </div>
               ) : (
                 <div className="text-center text-gray-400 py-10">
-                  Falha ao gerar respostas. Tente novamente.
+                  Failed to generate replies. Please try again.
                 </div>
               )}
             </div>

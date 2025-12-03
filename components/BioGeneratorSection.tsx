@@ -20,17 +20,17 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
         <div className="flex justify-center mb-4">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white border border-blue-100 shadow-sm">
             <Layers className="w-4 h-4 text-[#395BC7]" />
-            <span className="text-sm font-semibold text-[#395BC7]">Gerador de Bio</span>
+            <span className="text-sm font-semibold text-[#395BC7]">Bio Generator</span>
           </div>
         </div>
 
         {/* Text Content */}
         <div className="text-center max-w-3xl mx-auto mb-6 space-y-3">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A0B14] tracking-tight leading-[1.1]">
-            Não passe vergonha com uma <span className="text-[#0A0B14]">bio ruim...</span>
+            Don't embarrass yourself with a <span className="text-[#0A0B14]">bad bio...</span>
           </h2>
           <p className="text-base text-slate-600 font-medium leading-relaxed max-w-xl mx-auto">
-            O ChatDate vai gerar uma bio que faz as mulheres te enviarem a primeira mensagem
+            ChatDate will generate a bio that makes women text you first
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
             onClick={onCtaClick}
             className="group relative inline-flex items-center gap-2 px-10 py-4 bg-[#1786FF] hover:bg-blue-600 rounded-full text-white font-bold text-lg transition-all duration-300 hover:shadow-[0_10px_40px_-10px_rgba(23,134,255,0.5)] hover:-translate-y-1 active:translate-y-0 active:scale-95"
           >
-            Quero Usar Agora
+            Try It Now
           </button>
         </div>
 
@@ -58,9 +58,9 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
                 />
               </div>
               <div className="space-y-1 pt-1">
-                <p className="text-sm font-bold text-slate-800">Sua Bio Antiga</p>
+                <p className="text-sm font-bold text-slate-800">Your Old Bio</p>
                 <p className="text-xs text-slate-500">23y</p>
-                <p className="text-xs text-slate-500">📍Florianópolis</p>
+                <p className="text-xs text-slate-500">📍Los Angeles</p>
                 <p className="text-xs text-slate-500 mt-1">🥊✈🎸🎬</p>
               </div>
             </div>
@@ -77,13 +77,13 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
                   />
                 </div>
                 <div className="space-y-1 pt-1">
-                  <p className="text-sm font-bold text-slate-900">Sua Bio com ChatDate</p>
+                  <p className="text-sm font-bold text-slate-900">Your Bio with ChatDate</p>
                   <div className="bg-slate-50 rounded-xl p-3 border border-slate-100 mt-2">
                     <p className="text-sm text-slate-700 leading-snug">
-                      🏆 Campeão do meu bairro em piadas de tiozão
+                      🏆 Neighborhood champion of dad jokes
                     </p>
                     <p className="text-sm text-slate-700 leading-snug mt-2">
-                      Se você ganhar de mim nas piadas ruins vai receber um presente 👀
+                      If you beat me at bad jokes, you'll get a prize 👀
                     </p>
                   </div>
                 </div>

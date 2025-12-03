@@ -20,24 +20,24 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#78BBFF]/30 bg-[#78BBFF]/5 shadow-[0_0_0_1px_rgba(120,187,255,0.1)]">
               <MessageCircle size={18} className="text-[#78BBFF] fill-current" />
-              <span className="text-sm font-bold text-[#78BBFF] tracking-wide">Modo Conversa</span>
+              <span className="text-sm font-bold text-[#78BBFF] tracking-wide">Conversation Mode</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
               <span className="bg-gradient-to-r from-white via-blue-50 to-blue-200 bg-clip-text text-transparent">
-                Nunca mais seja ignorado por mandar uma mensagem clichê
+                Never get ignored for sending a cliché message again
               </span>
             </h2>
 
             <p className="text-base text-slate-400 font-medium leading-relaxed max-w-lg">
-              Toda mulher recebe dezenas de mensagens por dia no tinder, mas agora você vai ser o mais criativo de todos.
+              Every woman receives dozens of messages daily on Tinder, but now you'll be the most creative of them all.
             </p>
 
             <button 
               onClick={onCtaClick}
               className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full text-white font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.4)] active:scale-95"
             >
-              Quero Usar Agora
+              Try It Now
             </button>
         </div>
 
@@ -66,10 +66,10 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
                 <div className="bg-black/60 backdrop-blur-xl border border-white/15 p-6 rounded-2xl shadow-2xl animate-float-delayed text-center">
                   <div className="space-y-3">
                     <p className="text-white font-semibold text-sm md:text-[15px] leading-relaxed">
-                      Ok, você alimentando o dog foi fofo...
+                      Ok, you feeding the dog was cute...
                     </p>
                     <p className="text-white font-semibold text-sm md:text-[15px] leading-relaxed">
-                      Mas agora fiquei curioso: ele que te escolheu ou você que conquistou ele primeiro? 👀
+                      But now I'm curious: did he choose you or did you win him over first? 👀
                     </p>
                   </div>
                 </div>

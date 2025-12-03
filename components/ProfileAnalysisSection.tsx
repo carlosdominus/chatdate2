@@ -22,17 +22,17 @@ export const ProfileAnalysisSection: React.FC<ProfileAnalysisSectionProps> = ({ 
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#78BBFF]/30 bg-[#78BBFF]/5 shadow-[0_0_0_1px_rgba(120,187,255,0.1)]">
               <Search size={16} className="text-[#78BBFF]" />
-              <span className="text-sm font-bold text-[#78BBFF] tracking-wide">Análise de Perfil</span>
+              <span className="text-sm font-bold text-[#78BBFF] tracking-wide">Profile Analysis</span>
             </div>
 
             {/* Title */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white">
-              Descubra se seu Perfil está bom
+              Find out if your Profile is good
             </h2>
 
             {/* Subtitle */}
             <p className="text-base text-slate-400 font-medium leading-relaxed max-w-lg">
-              Envie um print do seu perfil e receba feedback personalizado
+              Upload a screenshot of your profile and receive personalized feedback
             </p>
 
             {/* CTA Button */}
@@ -41,7 +41,7 @@ export const ProfileAnalysisSection: React.FC<ProfileAnalysisSectionProps> = ({ 
                 onClick={onCtaClick}
                 className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#1786FF] hover:bg-blue-600 rounded-full text-white font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.4)] active:scale-95"
                 >
-                Quero Usar Agora
+                Try It Now
                 </button>
             </div>
         </div>

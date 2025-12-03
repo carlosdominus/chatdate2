@@ -24,7 +24,7 @@ export const analyzeStoryImage = async (base64Image: string): Promise<GeneratedR
             }
           },
           {
-            text: "You are an expert dating coach named ChatDate. Analyze this Instagram Story screenshot. Provide 3 distinct, creative, and engaging replies in Portuguese (Brazil) that the user could send to start a conversation. Avoid generic greetings. Make them context-aware based on the visual content."
+            text: "You are an expert dating coach named ChatDate. Analyze this Instagram Story screenshot. Provide 3 distinct, creative, and engaging replies in American English that the user could send to start a conversation. Avoid generic greetings. Make them context-aware based on the visual content."
           }
         ]
       },

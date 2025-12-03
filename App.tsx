@@ -99,12 +99,12 @@ export default function App() {
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 max-w-xl mx-auto lg:mx-0">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
                 <span className="bg-gradient-to-r from-white via-blue-100 to-blue-300 bg-clip-text text-transparent">
-                  Não sabe o que responder no story dela?
+                  Stuck on what to reply to her story?
                 </span>
               </h1>
               
               <p className="text-lg md:text-xl text-gray-400 font-medium leading-relaxed max-w-md">
-                É só enviar o print do story que o ChatDate vai te dar 3 opções de mensagens criativas e específicas para ela.
+                Just upload a screenshot of the story and ChatDate will give you 3 creative, specific message options for her.
               </p>
 
               <div className="pt-4">
@@ -112,7 +112,7 @@ export default function App() {
                   onClick={handleButtonClick}
                   className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full text-white font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(37,99,235,0.5)] active:scale-95"
                 >
-                  <span>Quero Usar Agora</span>
+                  <span>Try It Now</span>
                   <Upload className="w-5 h-5 group-hover:-translate-y-1 transition-transform duration-300" />
                 </button>
               </div>
@@ -150,7 +150,7 @@ export default function App() {
               {/* Bubble 1: Top of stack */}
               <div className="absolute bottom-[110px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
-                  text="Eu ia falar que você ficou linda nessa foto, mas teve uma coisa que me deixou preocupado...🤔"
+                  text="I was going to say you look beautiful, but one thing worried me...🤔"
                   className="w-full animate-float"
                   delay={0}
                 />
@@ -159,7 +159,7 @@ export default function App() {
               {/* Bubble 2: Middle of stack */}
               <div className="absolute bottom-[25px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
-                  text="Se Hollywood pegar fogo dnv, já sei de quem foi a culpa🔥👀"
+                  text="If Hollywood catches fire again, I know who to blame 🔥👀"
                   className="w-full animate-float-delayed"
                   delay={2}
                 />
@@ -168,7 +168,7 @@ export default function App() {
               {/* Bubble 3: Bottom of stack */}
               <div className="absolute bottom-[-60px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
-                  text="tá aí para passear ou para roubar o emprego de alguma atriz famosa? 👀"
+                  text="Are you there for sightseeing or to steal a famous actress's job? 👀"
                   className="w-full animate-float-slow"
                   delay={4}
                 />

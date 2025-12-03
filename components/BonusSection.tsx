@@ -15,15 +15,15 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
         <div className="flex flex-col items-center mb-16 space-y-6 text-center">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/90 border border-[#BDD1FF] shadow-[0_0_0_2px_rgba(241,242,251,0.5)]">
             <Gift className="w-5 h-5 text-[#395BC7]" />
-            <span className="text-sm font-bold text-[#395BC7] tracking-wide">Bônus</span>
+            <span className="text-sm font-bold text-[#395BC7] tracking-wide">Bonus</span>
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#323140] tracking-tight leading-[1.1] max-w-4xl">
-            Não adianta ter uma Ferrari se você não sabe dirigir…
+            It's no use having a Ferrari if you don't know how to drive...
           </h2>
           
           <p className="text-base md:text-lg text-slate-500 font-medium max-w-2xl">
-            Por isso você vai receber 2 treinamentos junto com o ChatDate
+            That's why you'll get 2 training courses included with ChatDate
           </p>
         </div>
 
@@ -34,14 +34,14 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
              <div className="aspect-video rounded-2xl overflow-hidden mb-6 bg-slate-100 relative">
                <img 
                  src="https://framerusercontent.com/images/OrDkvjZmYIOwjY1q4wLajqSh8s.png" 
-                 alt="Dominando o ChatDate" 
+                 alt="Mastering ChatDate" 
                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                />
              </div>
              <div className="px-2 pb-4 text-center md:text-left">
-               <h3 className="text-xl font-bold text-[#323140] mb-3">Dominando o ChatDate</h3>
+               <h3 className="text-xl font-bold text-[#323140] mb-3">Mastering ChatDate</h3>
                <p className="text-slate-500 font-medium leading-relaxed text-sm md:text-base">
-                 Curso te ensinando todos os truques do ChatDate e como usar 100% do potêncial dele
+                 Course teaching you all ChatDate tricks and how to use 100% of its potential
                </p>
              </div>
           </div>
@@ -51,14 +51,14 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
              <div className="aspect-video rounded-2xl overflow-hidden mb-6 bg-slate-100 relative">
                <img 
                  src="https://framerusercontent.com/images/GlmMlqa8qdatpJrrSvQdM5DdOJI.png" 
-                 alt="Método Vilaverde Online" 
+                 alt="Vilaverde Method Online" 
                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                />
              </div>
              <div className="px-2 pb-4 text-center md:text-left">
-               <h3 className="text-xl font-bold text-[#323140] mb-3">Método Vilaverde Online</h3>
+               <h3 className="text-xl font-bold text-[#323140] mb-3">Vilaverde Method Online</h3>
                <p className="text-slate-500 font-medium leading-relaxed text-sm md:text-base">
-                 Treinamento completo de instagram e tinder para você maximizar seus resultados
+                 Complete Instagram and Tinder training to maximize your results
                </p>
              </div>
           </div>
@@ -70,14 +70,14 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
               onClick={onCtaClick}
               className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full text-white font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.4)] active:scale-95"
             >
-              Quero Usar Agora
+              Try It Now
             </button>
         </div>
 
         {/* Exclusive Gifts */}
         <div className="max-w-4xl mx-auto">
            <h3 className="text-xl md:text-2xl font-bold text-[#323140] text-center mb-12 tracking-tight">
-             Além Disso Receba 2 Presentes Exclusivos
+             Plus, Get 2 Exclusive Gifts
            </h3>
            
            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
@@ -86,9 +86,9 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
                <div className="w-16 h-16 rounded-2xl bg-white border border-slate-100 shadow-md flex items-center justify-center text-slate-700 mb-2 transform hover:scale-110 transition-transform duration-300">
                  <Video size={30} strokeWidth={1.5} />
                </div>
-               <h4 className="text-xl font-bold text-[#323140]">Reuniões mensais com o Murilo</h4>
+               <h4 className="text-xl font-bold text-[#323140]">Monthly meetings with Murilo</h4>
                <p className="text-slate-500 font-medium max-w-[280px] leading-relaxed text-sm md:text-base">
-                 Tire dúvidas ao vivo com o Murilo 1 vez ao mês
+                 Ask questions live with Murilo once a month
                </p>
              </div>
 
@@ -99,7 +99,7 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
                </div>
                <h4 className="text-xl font-bold text-[#323140]">The Social Circle</h4>
                <p className="text-slate-500 font-medium max-w-[280px] leading-relaxed text-sm md:text-base">
-                 Mapa exclusivo com geolocalização dos membros. Encontre pessoas próximas para sair.
+                 Exclusive map with member geolocation. Find people nearby to hang out.
                </p>
              </div>
            </div>
