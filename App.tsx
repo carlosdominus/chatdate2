@@ -85,7 +85,7 @@ export default function App() {
           <div className="flex justify-center mb-12 animate-fade-in-down">
             <div className="flex items-center space-x-3">
               <img 
-                src="https://i.ibb.co/BVBZ2j4S/1a-CFvk-YFJVfy-WHi-E8rd89-A2l4qc.jpg" 
+                src="https://i.ibb.co/gbd5x4pr/logo.webp" 
                 alt="ChatDate Logo" 
                 className="w-8 h-8 object-cover rounded-xl"
               />
@@ -148,7 +148,7 @@ export default function App() {
               {/* Wrapped in div to handle positioning independently of float animation */}
               
               {/* Bubble 1: Top of stack */}
-              <div className="absolute bottom-[100px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
+              <div className="absolute bottom-[180px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
                   text="Eu ia falar que você ficou linda nessa foto, mas teve uma coisa que me deixou preocupado...🤔"
                   className="w-full animate-float"
@@ -157,7 +157,7 @@ export default function App() {
               </div>
 
               {/* Bubble 2: Middle of stack */}
-              <div className="absolute bottom-[40px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
+              <div className="absolute bottom-[60px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
                   text="Se Hollywood pegar fogo dnv, já sei de quem foi a culpa🔥👀"
                   className="w-full animate-float-delayed"
@@ -166,7 +166,7 @@ export default function App() {
               </div>
 
               {/* Bubble 3: Bottom of stack */}
-              <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
+              <div className="absolute bottom-[-60px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
                   text="tá aí para passear ou para roubar o emprego de alguma atriz famosa? 👀"
                   className="w-full animate-float-slow"
