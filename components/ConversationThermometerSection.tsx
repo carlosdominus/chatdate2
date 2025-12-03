@@ -67,7 +67,7 @@ export const ConversationThermometerSection: React.FC<ConversationThermometerSec
               {/* Cropped Container */}
               <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-gray-900/50">
                   <img 
-                      src="https://framerusercontent.com/images/dLx9XN4eBB0irqDTNwAbGt2X4.png" 
+                      src="https://i.ibb.co/qLzQ55yn/conversa-nozap.webp" 
                       alt="Thermometer Feature Interface" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
