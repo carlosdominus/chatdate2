@@ -8,7 +8,7 @@ interface BioGeneratorSectionProps {
 
 export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaClick }) => {
   return (
-    <section className="py-12 md:py-24 bg-[#F7F9FF] relative overflow-hidden">
+    <section className="py-10 md:py-16 bg-[#F7F9FF] relative overflow-hidden">
       {/* Background Gradients */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.05),transparent_50%)]"></div>
@@ -17,7 +17,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Header Badge */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-4">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white border border-blue-100 shadow-sm">
             <Layers className="w-4 h-4 text-[#395BC7]" />
             <span className="text-sm font-semibold text-[#395BC7]">Gerador de Bio</span>
@@ -25,7 +25,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
         </div>
 
         {/* Text Content */}
-        <div className="text-center max-w-3xl mx-auto mb-10 space-y-6">
+        <div className="text-center max-w-3xl mx-auto mb-6 space-y-3">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A0B14] tracking-tight leading-[1.1]">
             Não passe vergonha com uma <span className="text-[#0A0B14]">bio ruim...</span>
           </h2>
@@ -35,7 +35,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
         </div>
 
         {/* CTA Button (Moved Up) */}
-        <div className="flex justify-center mb-12 md:mb-16">
+        <div className="flex justify-center mb-8 md:mb-10">
           <button 
             onClick={onCtaClick}
             className="group relative inline-flex items-center gap-2 px-10 py-4 bg-[#1786FF] hover:bg-blue-600 rounded-full text-white font-bold text-lg transition-all duration-300 hover:shadow-[0_10px_40px_-10px_rgba(23,134,255,0.5)] hover:-translate-y-1 active:translate-y-0 active:scale-95"
@@ -45,10 +45,10 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
         </div>
 
         {/* Comparison Cards Stack */}
-        <div className="relative max-w-md mx-auto h-[340px] md:h-[400px] flex justify-center">
+        <div className="relative max-w-md mx-auto h-[240px] md:h-[300px] flex justify-center">
           
           {/* Card 1: Old Bio (Background) */}
-          <div className="absolute top-0 w-[90%] bg-white rounded-[2rem] p-4 shadow-xl border border-slate-200 transform scale-95 opacity-60 z-0 origin-bottom pb-20">
+          <div className="absolute top-0 w-[90%] bg-white rounded-[2rem] p-4 shadow-xl border border-slate-200 transform scale-95 opacity-60 z-0 origin-bottom pb-16">
             <div className="flex gap-4 items-start mb-4">
               <div className="w-20 h-20 rounded-2xl overflow-hidden shrink-0 bg-slate-200">
                 <img 
@@ -67,7 +67,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
           </div>
 
           {/* Card 2: ChatDate Bio (Foreground) */}
-          <div className="absolute top-20 md:top-24 w-full bg-white rounded-[2rem] p-4 shadow-[0_20px_60px_-15px_rgba(23,134,255,0.3)] border-2 border-[#5B9DFF] z-10 transform hover:scale-[1.02] transition-transform duration-300">
+          <div className="absolute top-12 md:top-16 w-full bg-white rounded-[2rem] p-4 shadow-[0_20px_60px_-15px_rgba(23,134,255,0.3)] border-2 border-[#5B9DFF] z-10 transform hover:scale-[1.02] transition-transform duration-300">
              <div className="flex gap-4 items-start mb-4">
                 <div className="w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-blue-100">
                   <img 
