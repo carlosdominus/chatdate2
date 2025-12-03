@@ -42,7 +42,7 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
         </div>
 
         {/* Image Composition */}
-        <div className="relative flex justify-center items-center w-full">
+        <div className="relative flex justify-center items-center w-full mb-32 md:mb-40">
             {/* Background Glow Image */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none -translate-y-20">
                <img 
@@ -62,7 +62,7 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
 
               {/* Floating Glass Message Card */}
               {/* Wrapped in a positioning div to isolate transform centering from animation */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[110%] md:w-[480px] z-20">
+              <div className="absolute -bottom-28 md:-bottom-36 left-1/2 -translate-x-1/2 w-[110%] md:w-[480px] z-20">
                 <div className="bg-black/60 backdrop-blur-xl border border-white/15 p-6 rounded-2xl shadow-2xl animate-float-delayed text-center">
                   <div className="space-y-3">
                     <p className="text-white font-semibold text-sm md:text-[15px] leading-relaxed">

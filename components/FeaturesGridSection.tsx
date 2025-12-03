@@ -105,12 +105,14 @@ export const FeaturesGridSection: React.FC = () => {
               key={index}
               className="group bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="w-12 h-12 mb-6 text-[#585961] group-hover:text-blue-600 transition-colors">
-                {feature.icon}
+              <div className="flex items-center gap-3 mb-4">
+                <div className="text-[#585961] group-hover:text-blue-600 transition-colors shrink-0">
+                  {feature.icon}
+                </div>
+                <h3 className="text-lg font-bold text-[#323140] group-hover:text-blue-600 transition-colors">
+                  {feature.title}
+                </h3>
               </div>
-              <h3 className="text-lg font-bold text-[#323140] mb-3 group-hover:text-blue-600 transition-colors">
-                {feature.title}
-              </h3>
               <p className="text-slate-500 leading-relaxed font-medium text-sm">
                 {feature.description}
               </p>
