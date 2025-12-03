@@ -45,7 +45,7 @@ export const ApproachModeSection: React.FC<ApproachModeSectionProps> = ({ onCtaC
         {/* Visuals Container */}
         <div className="relative w-full max-w-[400px] mx-auto flex flex-col items-center">
             <img 
-              src="https://framerusercontent.com/images/Kl2Rs3F2Xp9D3TluV1H0DKlvRsg.png?scale-down-to=512"
+              src="https://i.ibb.co/sdVPqXXG/tipos-conversas-1.webp"
               alt="Approach Mode Demo"
               className="w-full h-auto drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500"
             />

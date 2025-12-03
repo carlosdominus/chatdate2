@@ -51,7 +51,7 @@ export const ProfileAnalysisSection: React.FC<ProfileAnalysisSectionProps> = ({ 
             {/* Image - Displayed large as it contains the full composition */}
             <div className="relative w-full md:w-[90%]">
                 <img 
-                  src="https://framerusercontent.com/images/zv8j6rtIIXPK5ig054vNUAwgFg.png" 
+                  src="https://i.ibb.co/RkLMRkfz/foto-perfil.webp" 
                   alt="Profile Analysis Composition" 
                   className="w-full h-auto object-contain"
                 />

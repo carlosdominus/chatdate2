@@ -52,7 +52,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
             <div className="flex gap-4 items-start mb-4">
               <div className="w-20 h-20 rounded-2xl overflow-hidden shrink-0 bg-slate-200">
                 <img 
-                  src="https://framerusercontent.com/images/I41Ey23H85A6gp16RJaVakmOndg.png" 
+                  src="https://i.ibb.co/dJJQkvNm/imagem1.webp" 
                   alt="Old Bio" 
                   className="w-full h-full object-cover grayscale"
                 />
@@ -71,7 +71,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
              <div className="flex gap-4 items-start mb-4">
                 <div className="w-20 h-20 rounded-2xl overflow-hidden shrink-0 border border-blue-100">
                   <img 
-                    src="https://framerusercontent.com/images/YhqB0M7q8DkUuAwy9MiT1NTos.png" 
+                    src="https://i.ibb.co/bR7q5vbq/imagem2.webp" 
                     alt="ChatDate Bio" 
                     className="w-full h-full object-cover"
                   />
