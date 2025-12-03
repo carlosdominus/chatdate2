@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Zap, CheckCircle2 } from 'lucide-react';
 
@@ -12,11 +13,11 @@ const icons = [
 
 export const IntegrationsSection = () => {
   return (
-    <section className="py-32 bg-[#F7F9FF] relative overflow-hidden">
+    <section className="py-20 bg-[#F7F9FF] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Header Badge */}
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F7F9FF] border border-[#BDD1FF] shadow-[0_0_0_2px_rgba(241,242,251,0.5)]">
             <Zap className="w-4 h-4 text-[#395BC7] fill-current" />
             <span className="text-sm font-bold text-[#395BC7] tracking-wide">Integrações</span>
@@ -24,7 +25,7 @@ export const IntegrationsSection = () => {
         </div>
 
         {/* Text Content */}
-        <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-[#323140] tracking-tight leading-[1.1]">
             Use o ChatDate com seus <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-900">principais aplicativos</span>
           </h2>
@@ -34,7 +35,7 @@ export const IntegrationsSection = () => {
         </div>
 
         {/* Icons Grid */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-24 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-16 max-w-4xl mx-auto">
           {icons.map((icon, index) => (
             <div 
               key={index}
