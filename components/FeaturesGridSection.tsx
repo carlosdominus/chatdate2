@@ -89,11 +89,11 @@ export const FeaturesGridSection: React.FC = () => {
             <span className="text-sm font-bold text-[#395BC7] tracking-wide">Ferramentas</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-[#323140] tracking-tight leading-[1.1]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#323140] tracking-tight leading-[1.1]">
             Todos os Modos do ChatDate
           </h2>
           
-          <p className="text-lg text-slate-500 font-medium">
+          <p className="text-base text-slate-500 font-medium">
             Explore todos os modos do ChatDate
           </p>
         </div>
@@ -108,10 +108,10 @@ export const FeaturesGridSection: React.FC = () => {
               <div className="w-12 h-12 mb-6 text-[#585961] group-hover:text-blue-600 transition-colors">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-[#323140] mb-3 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-lg font-bold text-[#323140] mb-3 group-hover:text-blue-600 transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-slate-500 leading-relaxed font-medium text-[15px]">
+              <p className="text-slate-500 leading-relaxed font-medium text-sm">
                 {feature.description}
               </p>
             </div>

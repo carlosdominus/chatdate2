@@ -26,10 +26,10 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
 
         {/* Text Content */}
         <div className="text-center max-w-3xl mx-auto mb-10 space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0A0B14] tracking-tight leading-[1.1]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0A0B14] tracking-tight leading-[1.1]">
             Não passe vergonha com uma <span className="text-[#0A0B14]">bio ruim...</span>
           </h2>
-          <p className="text-lg text-slate-600 font-medium leading-relaxed max-w-xl mx-auto">
+          <p className="text-base text-slate-600 font-medium leading-relaxed max-w-xl mx-auto">
             O ChatDate vai gerar uma bio que faz as mulheres te enviarem a primeira mensagem
           </p>
         </div>

@@ -26,12 +26,12 @@ export const ProfileAnalysisSection: React.FC<ProfileAnalysisSectionProps> = ({ 
             </div>
 
             {/* Title */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-white">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white">
               Descubra se seu Perfil está bom
             </h2>
 
             {/* Subtitle */}
-            <p className="text-lg text-slate-400 font-medium leading-relaxed max-w-lg">
+            <p className="text-base text-slate-400 font-medium leading-relaxed max-w-lg">
               Envie um print do seu perfil e receba feedback personalizado
             </p>
 

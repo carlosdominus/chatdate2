@@ -25,12 +25,12 @@ export const ApproachModeSection: React.FC<ApproachModeSectionProps> = ({ onCtaC
         </div>
  
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-bold text-[#323140] text-center max-w-3xl mb-4 leading-[1.15] tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#323140] text-center max-w-3xl mb-4 leading-[1.15] tracking-tight">
           Quer abordar uma mulher mas não sabe o que dizer?
         </h2>
  
         {/* Subtitle */}
-        <p className="text-lg text-slate-500 font-medium text-center max-w-2xl mb-8 leading-relaxed">
+        <p className="text-base text-slate-500 font-medium text-center max-w-2xl mb-8 leading-relaxed">
           Mande um áudio explicando a situação que o ChatDate vai te dar frase perfeita para começar a conversa
         </p>
  

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Check, ShieldCheck, Flame, MessageCircle } from 'lucide-react';
 
@@ -28,8 +29,8 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
         
         {/* Header */}
         <div className="flex flex-col items-center mb-16 text-center space-y-2">
-          <h3 className="text-xl font-bold text-gray-200 uppercase tracking-wider">ChatDate</h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.1]">
+          <h3 className="text-lg font-bold text-gray-200 uppercase tracking-wider">ChatDate</h3>
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.1]">
             <span className="bg-gradient-to-r from-white via-blue-100 to-blue-300 bg-clip-text text-transparent">
               Escolha Seu Plano:
             </span>
@@ -49,7 +50,7 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B14] to-transparent"></div>
               <div className="absolute bottom-4 left-0 w-full text-center">
-                <h3 className="text-2xl font-bold text-white mb-1">ChatDate Global</h3>
+                <h3 className="text-xl font-bold text-white mb-1">ChatDate Global</h3>
                 <p className="text-sm font-semibold text-white/70">Funciona em todos idiomas</p>
                 <p className="text-sm font-semibold text-white/70">Ideal se você mora fora ou vai viajar</p>
               </div>
@@ -62,7 +63,7 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
                     <div className="flex-shrink-0 w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center">
                       <Check size={12} className="text-blue-300" strokeWidth={3} />
                     </div>
-                    <span className="text-gray-200 font-medium text-[15px]">{feature}</span>
+                    <span className="text-gray-200 font-medium text-sm md:text-[15px]">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -134,12 +135,12 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
             </div>
 
             {/* Title */}
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
                Garantia de 15 dias
             </h3>
 
             {/* Description */}
-            <p className="text-lg text-slate-400 font-medium leading-relaxed max-w-xl mx-auto">
+            <p className="text-base text-slate-400 font-medium leading-relaxed max-w-xl mx-auto">
                <strong className="text-white block md:inline">Teste o ChatDate por 15 dias sem compromisso,</strong>{" "}
                se você não gostar nós vamos te reembolsar 100% do valor investido
             </p>

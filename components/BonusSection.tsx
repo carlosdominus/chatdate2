@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Gift, Video, Globe } from 'lucide-react';
 
@@ -17,11 +18,11 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
             <span className="text-sm font-bold text-[#395BC7] tracking-wide">Bônus</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-[#323140] tracking-tight leading-[1.1] max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#323140] tracking-tight leading-[1.1] max-w-4xl">
             Não adianta ter uma Ferrari se você não sabe dirigir…
           </h2>
           
-          <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl">
+          <p className="text-base md:text-lg text-slate-500 font-medium max-w-2xl">
             Por isso você vai receber 2 treinamentos junto com o ChatDate
           </p>
         </div>
@@ -38,8 +39,8 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
                />
              </div>
              <div className="px-2 pb-4 text-center md:text-left">
-               <h3 className="text-2xl font-bold text-[#323140] mb-3">Dominando o ChatDate</h3>
-               <p className="text-slate-500 font-medium leading-relaxed">
+               <h3 className="text-xl font-bold text-[#323140] mb-3">Dominando o ChatDate</h3>
+               <p className="text-slate-500 font-medium leading-relaxed text-sm md:text-base">
                  Curso te ensinando todos os truques do ChatDate e como usar 100% do potêncial dele
                </p>
              </div>
@@ -55,8 +56,8 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
                />
              </div>
              <div className="px-2 pb-4 text-center md:text-left">
-               <h3 className="text-2xl font-bold text-[#323140] mb-3">Método Vilaverde Online</h3>
-               <p className="text-slate-500 font-medium leading-relaxed">
+               <h3 className="text-xl font-bold text-[#323140] mb-3">Método Vilaverde Online</h3>
+               <p className="text-slate-500 font-medium leading-relaxed text-sm md:text-base">
                  Treinamento completo de instagram e tinder para você maximizar seus resultados
                </p>
              </div>
@@ -75,7 +76,7 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
 
         {/* Exclusive Gifts */}
         <div className="max-w-4xl mx-auto">
-           <h3 className="text-2xl md:text-3xl font-bold text-[#323140] text-center mb-12 tracking-tight">
+           <h3 className="text-xl md:text-2xl font-bold text-[#323140] text-center mb-12 tracking-tight">
              Além Disso Receba 2 Presentes Exclusivos
            </h3>
            
@@ -86,7 +87,7 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
                  <Video size={30} strokeWidth={1.5} />
                </div>
                <h4 className="text-xl font-bold text-[#323140]">Reuniões mensais com o Murilo</h4>
-               <p className="text-slate-500 font-medium max-w-[280px] leading-relaxed">
+               <p className="text-slate-500 font-medium max-w-[280px] leading-relaxed text-sm md:text-base">
                  Tire dúvidas ao vivo com o Murilo 1 vez ao mês
                </p>
              </div>
@@ -97,7 +98,7 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
                  <Globe size={30} strokeWidth={1.5} />
                </div>
                <h4 className="text-xl font-bold text-[#323140]">The Social Circle</h4>
-               <p className="text-slate-500 font-medium max-w-[280px] leading-relaxed">
+               <p className="text-slate-500 font-medium max-w-[280px] leading-relaxed text-sm md:text-base">
                  Mapa exclusivo com geolocalização dos membros. Encontre pessoas próximas para sair.
                </p>
              </div>

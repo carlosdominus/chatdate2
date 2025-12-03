@@ -13,7 +13,7 @@ const icons = [
 
 export const IntegrationsSection = () => {
   return (
-    <section className="py-20 bg-[#F7F9FF] relative overflow-hidden">
+    <section className="py-12 bg-[#F7F9FF] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Header Badge */}
@@ -25,17 +25,17 @@ export const IntegrationsSection = () => {
         </div>
 
         {/* Text Content */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#323140] tracking-tight leading-[1.1]">
+        <div className="text-center max-w-3xl mx-auto mb-8 space-y-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#323140] tracking-tight leading-[1.1]">
             Use o ChatDate com seus <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-900">principais aplicativos</span>
           </h2>
-          <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto">
             O ChatDate funciona dentro do WhatsApp e você pode usá-lo para analisar suas conversas em qualquer aplicativo.
           </p>
         </div>
 
         {/* Icons Grid */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-16 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-10 max-w-4xl mx-auto">
           {icons.map((icon, index) => (
             <div 
               key={index}
@@ -66,7 +66,7 @@ export const IntegrationsSection = () => {
             <div className="p-2.5 bg-[#E1F0FF] rounded-lg text-[#0099FF] group-hover:scale-110 transition-transform">
               <Zap size={22} strokeWidth={2.5} />
             </div>
-            <span className="text-[#0E1C29] font-bold text-lg">Respostas Imediatas</span>
+            <span className="text-[#0E1C29] font-bold text-base">Respostas Imediatas</span>
           </div>
           
           <div className="hidden md:block w-px h-8 bg-slate-200"></div>
@@ -87,7 +87,7 @@ export const IntegrationsSection = () => {
                 <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
               </svg>
             </div>
-            <span className="text-[#0E1C29] font-bold text-lg">Diretamente no WhatsApp</span>
+            <span className="text-[#0E1C29] font-bold text-base">Diretamente no WhatsApp</span>
           </div>
         </div>
 

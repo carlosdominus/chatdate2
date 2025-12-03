@@ -23,13 +23,13 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
               <span className="text-sm font-bold text-[#78BBFF] tracking-wide">Modo Conversa</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
               <span className="bg-gradient-to-r from-white via-blue-50 to-blue-200 bg-clip-text text-transparent">
                 Nunca mais seja ignorado por mandar uma mensagem clichê
               </span>
             </h2>
 
-            <p className="text-lg text-slate-400 font-medium leading-relaxed max-w-lg">
+            <p className="text-base text-slate-400 font-medium leading-relaxed max-w-lg">
               Toda mulher recebe dezenas de mensagens por dia no tinder, mas agora você vai ser o mais criativo de todos.
             </p>
 
