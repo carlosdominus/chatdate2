@@ -148,7 +148,7 @@ export default function App() {
               {/* Wrapped in div to handle positioning independently of float animation */}
               
               {/* Bubble 1: Top of stack */}
-              <div className="absolute bottom-[180px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
+              <div className="absolute bottom-[110px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
                   text="Eu ia falar que você ficou linda nessa foto, mas teve uma coisa que me deixou preocupado...🤔"
                   className="w-full animate-float"
@@ -157,7 +157,7 @@ export default function App() {
               </div>
 
               {/* Bubble 2: Middle of stack */}
-              <div className="absolute bottom-[60px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
+              <div className="absolute bottom-[25px] left-1/2 -translate-x-1/2 w-full max-w-[280px] z-10">
                 <FloatingBubble 
                   text="Se Hollywood pegar fogo dnv, já sei de quem foi a culpa🔥👀"
                   className="w-full animate-float-delayed"
