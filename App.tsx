@@ -140,7 +140,7 @@ export default function App() {
                  {/* Screen Content */}
                  <div className="absolute inset-0 bg-[#1a1a1a]">
                    <img 
-                     src="https://framerusercontent.com/images/q1eI1kv0JShxXFI5fINuuGPUQE.png" 
+                     src="https://i.ibb.co/DTvB3wQ/q1e-I1kv0-JShx-XFI5f-INuu-GPUQE-1-2.webp" 
                      alt="App Interface" 
                      className="w-full h-full object-cover opacity-80"
                    />
