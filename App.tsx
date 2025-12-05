@@ -14,6 +14,9 @@ import { ProfileAnalysisSection } from './components/ProfileAnalysisSection';
 import { FeaturesGridSection } from './components/FeaturesGridSection';
 import { BonusSection } from './components/BonusSection';
 import { PricingSection } from './components/PricingSection';
+import { FAQSection } from './components/FAQSection';
+import { Footer } from './components/Footer';
+import { VSLSection } from './components/VSLSection';
 
 export default function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -67,6 +70,9 @@ export default function App() {
   return (
     <div className="bg-[#050505] text-white selection:bg-blue-500/30">
       
+      {/* VSL SECTION */}
+      <VSLSection />
+
       {/* HERO SECTION */}
       <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
         {/* Background Grid Pattern */}
@@ -208,6 +214,12 @@ export default function App() {
 
       {/* PRICING SECTION */}
       <PricingSection />
+
+      {/* FAQ SECTION */}
+      <FAQSection />
+
+      {/* FOOTER */}
+      <Footer />
 
       {/* Analysis Modal */}
       <AnalysisModal 
