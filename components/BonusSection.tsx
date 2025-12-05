@@ -23,17 +23,17 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
           </h2>
           
           <p className="text-base md:text-lg text-slate-500 font-medium max-w-2xl">
-            That's why you'll get 2 training courses included with ChatDate
+            That's why you'll get a training course included with ChatDate
           </p>
         </div>
 
         {/* Training Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
+        <div className="flex justify-center mb-16 max-w-5xl mx-auto">
           {/* Card 1 */}
-          <div className="group bg-white rounded-[2rem] p-4 md:p-5 shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+          <div className="w-full max-w-md group bg-white rounded-[2rem] p-4 md:p-5 shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
              <div className="aspect-video rounded-2xl overflow-hidden mb-6 bg-slate-100 relative">
                <img 
-                 src="https://framerusercontent.com/images/OrDkvjZmYIOwjY1q4wLajqSh8s.png" 
+                 src="https://i.ibb.co/9mnGBGjp/Mastering-the-chat-date.avif" 
                  alt="Mastering ChatDate" 
                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                />
@@ -42,23 +42,6 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onCtaClick }) => {
                <h3 className="text-xl font-bold text-[#323140] mb-3">Mastering ChatDate</h3>
                <p className="text-slate-500 font-medium leading-relaxed text-sm md:text-base">
                  Course teaching you all ChatDate tricks and how to use 100% of its potential
-               </p>
-             </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="group bg-white rounded-[2rem] p-4 md:p-5 shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-             <div className="aspect-video rounded-2xl overflow-hidden mb-6 bg-slate-100 relative">
-               <img 
-                 src="https://framerusercontent.com/images/GlmMlqa8qdatpJrrSvQdM5DdOJI.png" 
-                 alt="Vilaverde Method Online" 
-                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-               />
-             </div>
-             <div className="px-2 pb-4 text-center md:text-left">
-               <h3 className="text-xl font-bold text-[#323140] mb-3">Vilaverde Method Online</h3>
-               <p className="text-slate-500 font-medium leading-relaxed text-sm md:text-base">
-                 Complete Instagram and Tinder training to maximize your results
                </p>
              </div>
           </div>

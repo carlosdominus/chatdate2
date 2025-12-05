@@ -10,7 +10,6 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
   const features = [
     "Access to all features",
     "Mastering ChatDate Course",
-    "Vilaverde Method Online",
     "Seductive Tinder Template",
     "Irresistible Instagram Checklist",
     "Monthly Hotseats",
@@ -44,7 +43,7 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
           <div className="relative group rounded-[2.5rem] overflow-hidden border border-blue-500/30 bg-[#0A0B14] shadow-2xl flex flex-col hover:border-blue-500/50 transition-colors duration-300">
             <div className="h-48 overflow-hidden relative">
               <img 
-                src="https://framerusercontent.com/images/cGd6HvOO7nBUdJONvR18kNOYqc.png" 
+                src="https://i.ibb.co/1Yhkk62g/bannerzinho.avif" 
                 alt="ChatDate Global" 
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
               />
@@ -69,10 +68,10 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
               </div>
 
               <div className="border-t border-white/10 pt-6 text-center">
-                <p className="text-red-400 font-bold text-sm mb-1 line-through">FROM $ 177 TO</p>
+                <p className="text-red-400 font-bold text-sm mb-1 line-through">FROM $ 87 TO</p>
                 <div className="flex items-end justify-center gap-1 mb-6 text-white">
                   <span className="text-2xl font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">$</span>
-                  <span className="text-5xl font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">87</span>
+                  <span className="text-5xl font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">27</span>
                   <span className="text-lg font-medium text-gray-400 mb-1">/year</span>
                 </div>
 
