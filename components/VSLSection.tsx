@@ -1,24 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, memo } from 'react';
 
 interface VSLSectionProps {
   onComplete?: () => void;
 }
 
-export const VSLSection: React.FC<VSLSectionProps> = ({ onComplete }) => {
+const VSLSectionComponent: React.FC<VSLSectionProps> = ({ onComplete }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
+  const onCompleteRef = useRef(onComplete);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Keep callback ref updated
+  useEffect(() => {
+    onCompleteRef.current = onComplete;
+  }, [onComplete]);
 
   useEffect(() => {
-    // 1. Check Local Storage for Delay Logic
+    // 1. Settings
     const SECONDS_TO_DISPLAY = 60;
     const STORAGE_KEY = `alreadyElsDisplayed${SECONDS_TO_DISPLAY}`;
     const alreadyDisplayed = localStorage.getItem(STORAGE_KEY);
+    const PLAYER_ID = 'ab-691b9271d84e2d824a092e43';
 
-    if (alreadyDisplayed && onComplete) {
-      onComplete();
+    // If previously watched, show content immediately
+    if (alreadyDisplayed) {
+      if (onCompleteRef.current) onCompleteRef.current();
     }
 
-    // 2. Load Script
+    // 2. Load Player Script (Idempotent)
     const scriptUrl = "https://scripts.converteai.net/853c4f04-8442-44da-b89d-0541d78036bb/ab-test/691b9271d84e2d824a092e43/player.js";
     if (!document.querySelector(`script[src="${scriptUrl}"]`)) {
       const s = document.createElement("script");
@@ -27,53 +35,71 @@ export const VSLSection: React.FC<VSLSectionProps> = ({ onComplete }) => {
       document.head.appendChild(s);
     }
 
-    // 3. Manually mount with Double Isolation
-    // We create a vanilla DIV wrapper inside the React Ref. 
-    // This ensures the player's direct parent is NOT a React node with __reactFiber props.
+    // 3. Manual DOM Mounting (Idempotent check prevents duplicates)
     if (containerRef.current) {
-        if (!wrapperRef.current) {
-            wrapperRef.current = document.createElement('div');
-            wrapperRef.current.style.width = '100%';
-            containerRef.current.appendChild(wrapperRef.current);
+        // Only append if it doesn't already exist.
+        // This prevents the "Circular structure" error caused by duplicate custom elements in StrictMode
+        // and allows us to remove the aggressive cleanup that was deleting the video.
+        if (!containerRef.current.querySelector('vturb-smartplayer')) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'vsl-wrapper w-full';
+            
+            const player = document.createElement('vturb-smartplayer');
+            player.setAttribute('id', PLAYER_ID);
+            player.className = 'block w-full mx-auto';
+            
+            wrapper.appendChild(player);
+            containerRef.current.appendChild(wrapper);
         }
-        
-        const wrapper = wrapperRef.current;
-        wrapper.innerHTML = ''; // Clear previous instances if any
-        
-        const player = document.createElement('vturb-smartplayer');
-        player.setAttribute('id', 'ab-691b9271d84e2d824a092e43');
-        player.className = 'block w-full mx-auto';
-        
-        wrapper.appendChild(player);
     }
 
-    // 4. Monitor Video Progress for Delay
-    const interval = setInterval(() => {
-        if (localStorage.getItem(STORAGE_KEY)) return; // Stop checking if already set
+    // 4. Timer / Progress Monitor
+    // Clear any existing interval to be safe
+    if (intervalRef.current) clearInterval(intervalRef.current);
 
-        const smartplayer = (window as any).smartplayer;
-        if (smartplayer && smartplayer.instances && smartplayer.instances[0]) {
-            const instance = smartplayer.instances[0];
-            
-            // Trigger if video passes the time threshold
-            if (instance.video.currentTime > SECONDS_TO_DISPLAY) {
-                if (onComplete) onComplete();
-                localStorage.setItem(STORAGE_KEY, "true");
-                clearInterval(interval);
+    intervalRef.current = setInterval(() => {
+        try {
+            const smartplayer = (window as any).smartplayer;
+            if (smartplayer && smartplayer.instances && smartplayer.instances[0]) {
+                const instance = smartplayer.instances[0];
+                
+                // Check time
+                if (instance.video.currentTime > SECONDS_TO_DISPLAY) {
+                    localStorage.setItem(STORAGE_KEY, "true");
+                    if (onCompleteRef.current) onCompleteRef.current();
+                    
+                    // Stop checking once target reached
+                    if (intervalRef.current) {
+                        clearInterval(intervalRef.current);
+                        intervalRef.current = null;
+                    }
+                }
             }
+        } catch (e) {
+            // Ignore errors
         }
     }, 1000);
 
-    return () => clearInterval(interval);
-  }, [onComplete]);
+    return () => {
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+        }
+        // Removed containerRef.current.innerHTML = '' to prevent video from disappearing.
+        // The check in step 3 prevents duplicates, so we don't need to destroy the DOM here.
+    };
+  }, []); 
 
   return (
     <section className="relative w-full pt-8 pb-4 z-50">
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6">
         <div className="relative w-full rounded-2xl overflow-hidden shadow-[0_0_40px_-10px_rgba(37,99,235,0.3)] border border-white/10 bg-black/50 backdrop-blur-sm">
+          {/* React leaves this div alone after initial render due to memo */}
           <div ref={containerRef} className="w-full min-h-[200px]" />
         </div>
       </div>
     </section>
   );
 };
+
+// IMPORTANT: deeply memoize to prevent any re-renders from parent updates
+export const VSLSection = memo(VSLSectionComponent, () => true);

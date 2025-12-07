@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Upload } from 'lucide-react';
 import { analyzeStoryImage } from './services/geminiService';
 import { GeneratedReply, AnalysisState } from './types';
@@ -26,7 +26,18 @@ export default function App() {
     imagePreview: null
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  // Initialize state based on localStorage to avoid flash of hidden content if already watched
   const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+     // Check immediately on mount in case logic in VSLSection is delayed
+     const SECONDS_TO_DISPLAY = 60;
+     const STORAGE_KEY = `alreadyElsDisplayed${SECONDS_TO_DISPLAY}`;
+     if (localStorage.getItem(STORAGE_KEY)) {
+         setShowContent(true);
+     }
+  }, []);
 
   const handleButtonClick = () => {
     fileInputRef.current?.click();
@@ -84,8 +95,10 @@ export default function App() {
         {/* VSL SECTION - Always Visible */}
         <VSLSection onComplete={() => setShowContent(true)} />
 
-        {/* HERO SECTION - Hidden until VSL delay complete */}
-        {showContent && (
+        {/* HERO SECTION - Hidden via CSS (display:none) until delay complete. 
+            Using 'hidden' class instead of conditional rendering {showContent && ...} 
+            prevents DOM thrashing that restarts the video. */}
+        <div className={showContent ? "animate-fade-in" : "hidden"}>
           <section className="relative min-h-screen flex flex-col justify-center animate-fade-in-up">
             {/* Main Container */}
             <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-24">
@@ -189,12 +202,11 @@ export default function App() {
               </div>
             </div>
           </section>
-        )}
+        </div>
       </div>
 
-      {/* CONDITIONAL CONTENT */}
-      {showContent && (
-        <div className="animate-fade-in">
+      {/* CONDITIONAL CONTENT (Hiding via CSS) */}
+      <div className={showContent ? "animate-fade-in" : "hidden"}>
           {/* INTEGRATIONS SECTION */}
           <IntegrationsSection />
 
@@ -236,8 +248,7 @@ export default function App() {
             imagePreview={analysis.imagePreview}
             results={analysis.result}
           />
-        </div>
-      )}
+      </div>
 
     </div>
   );
